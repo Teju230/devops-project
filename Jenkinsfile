@@ -2,10 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('Test') {
+
+        stage('Clone') {
             steps {
-                echo 'Pipeline Working Successfully'
+                echo 'GitHub Connected Successfully'
             }
         }
+
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker --version'
+            }
+        }
+
     }
 }

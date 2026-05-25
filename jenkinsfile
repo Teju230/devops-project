@@ -2,12 +2,10 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Clone') {
+        stage('Test') {
             steps {
-                echo 'GitHub connected successfully'
+                echo 'Pipeline Working Successfully'
             }
         }
-
     }
 }

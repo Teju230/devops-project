@@ -49,23 +49,27 @@ GitHub → Jenkins → Docker Image → DockerHub → Kubernetes → Browser
 Command:
 docker build -t myapp:latest .
 
-4️⃣ DockerHub Push
+
+4️⃣ DockerHub Push-
 Image is tagged and pushed to DockerHub
 Commands:
 docker tag myapp:latest username/myapp:latest
 docker push username/myapp:latest
 
-5️⃣ Kubernetes Deployment
+
+5️⃣ Kubernetes Deployment-
 Deployment file is created (deployment.yaml)
 Pods are created using Docker image
 Command:
 kubectl apply -f deployment.yaml
 
-6️⃣ Service Exposure
+
+6️⃣ Service Exposure-
 Kubernetes Service exposes application to browser
 Command:
 kubectl expose deployment myapp --type=NodePort --port=80
 
-🌐 Final Output
+
+🌐 Final Output-
 Hello DevOps  
 My First CI/CD Pipeline Project

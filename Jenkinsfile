@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('teju-dockerhub-creds')
-        DOCKER_IMAGE = "tejzzzzzz/myapp"
+        DOCKER_IMAGE = "tejzzzzzz/myapp:latest"
         IMAGE_TAG = "${BUILD_NUMBER}"
         NAMESPACE = "teju-ns"
     }
